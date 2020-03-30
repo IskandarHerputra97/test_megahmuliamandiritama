@@ -28,7 +28,7 @@ class _AddDataPageState extends State<AddDataPage> {
   LatLng _initialPosition = LatLng(-6.2034987, 106.8293654);
 
   static final String uploadEndPoint =
-      'http://$myIP/MegahMuliaMandiriTama/uploadImage.php';
+      '${myUrl}uploadImage.php';
   Future<File> file;
   File file2;
   String status = '';
@@ -245,7 +245,7 @@ class _AddDataPageState extends State<AddDataPage> {
   }
 
   _addData() {
-    var url = 'http://$myIP/MegahMuliaMandiriTama/addData.php';
+    var url = '${myUrl}addData.php';
 
     http.post(url, body: {
       'nama': name.text,
@@ -254,12 +254,12 @@ class _AddDataPageState extends State<AddDataPage> {
       'alamat': address.text,
       'latitude': position.latitude.toString(),
       'longitude': position.longitude.toString(),
-      'imagePath': 'http://$myIP/MegahMuliaMandiriTama/$fileName',
+      'imagePath': '$myUrl$fileName',
     });
     print(name.text);
     print(phoneNumber.text);
     print(email.text);
     print(address.text);
-    print('http://$myIP/MegahMuliaMandiriTama/$fileName');
+    print('$myUrl$fileName');
   }
 }

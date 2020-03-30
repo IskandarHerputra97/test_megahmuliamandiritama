@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   List<People> _people = List<People>();
 
   Future<List<People>> fetchPeople() async {
-    var url = 'http://$myIP/MegahMuliaMandiriTama/getPeople.php';
+    var url = '${myUrl}getPeople.php';
 
     var response = await http.get(url);
 

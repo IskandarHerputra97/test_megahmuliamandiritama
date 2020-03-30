@@ -5,7 +5,9 @@ import 'package:test_megahmuliamandiritama/ui/homePage.dart';
 
 void main() => runApp(MyApp());
 
-String myIP = 'IP address di sini';
+//String myIP = 'IP address di sini';
+String myIP = 'iskandarherputra.000webhostapp.com';
+String myUrl = 'http://$myIP/';
 
 class MyApp extends StatelessWidget {
   @override

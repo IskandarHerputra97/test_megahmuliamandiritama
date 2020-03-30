@@ -18,7 +18,8 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   Future<List> _login() async {
-    final response = await http.post('http://$myIP/MegahMuliaMandiriTama/login.php', body: {
+    //var url = '${myUrl}getPeople.php';
+    final response = await http.post('${myUrl}login.php', body: {
       'nama': name.text,
       'email': email.text,
       'password': password.text,
