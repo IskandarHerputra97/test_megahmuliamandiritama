@@ -102,6 +102,14 @@ class _HomePageState extends State<HomePage> {
                       'Sign out',
                     ),
                   ),
+                  RaisedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/testBloc');
+                    },
+                    child: Text(
+                      'Test bloc',
+                    ),
+                  ),
                 ],
               ),
             ],

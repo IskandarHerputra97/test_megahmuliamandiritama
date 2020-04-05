@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_megahmuliamandiritama/ui/addDataPage.dart';
 import 'package:test_megahmuliamandiritama/ui/loginPage.dart';
 import 'package:test_megahmuliamandiritama/ui/homePage.dart';
+import 'package:test_megahmuliamandiritama/ui/testBloc.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/loginPage': (BuildContext context) => LoginPage(),
         '/homePage': (BuildContext context) => HomePage(),
         '/addDataPage': (BuildContext context) => AddDataPage(),
+        '/testBloc': (BuildContext context) => TestBloc(),
       },
     );
   }
