@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:test_megahmuliamandiritama/main.dart';
 import 'package:test_megahmuliamandiritama/model/people.dart';
 
 class HomePageDetail extends StatefulWidget {
@@ -18,8 +17,6 @@ class _HomePageDetailState extends State<HomePageDetail> {
   LatLng _initialPosition;
   double _latitude;
   double _longitude;
-  //LatLng _initialPosition = LatLng(-6.2034987, 106.8293654);
-  //LatLng _initialPosition = LatLng(widget.people.position, 106.8293654);
 
   @override
   void initState() {
